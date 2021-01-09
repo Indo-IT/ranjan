@@ -1,14 +1,23 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
-  font-family: "Hiragino Kaku Gothic ProN";
+  font-family: "Hiragino Kaku Gothic ProN", sans-serif;
 }
 
 a {
   text-decoration: none;
 }
 
+.clear {
+  clear: left;
+}
+
 .container {
-  width: 1170px;
+  max-width: 1170px;
+  width: 100%;
   padding: 0 15px;
   margin: 0 auto;
 }
@@ -32,6 +41,7 @@ a {
 }
 
 .btn-wrapper {
+  text-align: center;
   margin: 20px 0;
 }
 
@@ -58,6 +68,7 @@ a {
   display: inline-block;
   opacity: 0.8;
   border-radius: 4px;
+  text-align: center;
 }
 
 .btn:hover {
@@ -72,11 +83,8 @@ header {
   height: 65px;
   width: 100%;
   background-color: rgba(34, 49, 52, 0.9);
-  /* positionプロパティをfixedに、topを0に指定してください */
-  position: fixed;
+  position :fixed;
   top: 0;
-  
-  /* z-indexを10に指定してください */
   z-index: 10;
 }
 
@@ -91,12 +99,7 @@ header {
 
 .header-right {
   float: right;
-  background-color: rgba(255, 255, 255, 0.3);
-  transition: all 0.5s;
-}
-
-.header-right:hover {
-  background-color: rgba(255, 255, 255, 0.5);
+  margin-right: -25px;
 }
 
 .header-right a {
@@ -104,18 +107,36 @@ header {
   padding: 0 25px;
   color: white;
   display: block;
+  float: left;
+  transition: all 0.5s;
 }
 
+.header-right a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* menu-iconのCSSを貼り付けてください */
+.menu-icon {
+  color: white;
+  float: right;
+  font-size: 25px;
+  padding: 21px 0;
+  /* displayをnoneに指定してください */
+  display: none;
+}
+
+
 .lesson-wrapper {
-  height: 500px;
   padding-bottom: 80px;
+  padding-left: 5%;
+  padding-right: 5%;
   background-color: #f7f7f7;
   text-align: center;
 }
 
 .heading {
-  padding-top: 60px;
-  padding-bottom: 30px;
+  padding-top: 80px;
+  padding-bottom: 50px;
   color: #5f5d60;
 }
 
@@ -134,16 +155,16 @@ header {
 
 .lesson-icon p {
   position: absolute;
-  top: 90px;
+  top: 44%;
   width: 100%;
   color: white;
 }
 
-.txt-contents {
+.text-contents {
   width: 80%;
   display: inline-block;
-  margin-top: 20px;
-  font-size: 12px;
+  margin-top: 15px;
+  font-size: 13px;
   color: #b3aeb5;
 }
 
@@ -181,4 +202,5 @@ footer p {
 
 footer {
   padding-top: 30px;
+  padding-bottom: 20px;
 }
