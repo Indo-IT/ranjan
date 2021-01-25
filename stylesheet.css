@@ -151,22 +151,30 @@ header {
 
 .lesson-icon {
   position: relative;
+  width: 70%;
+  margin: 0 auto;
 }
 
 .lesson-icon p {
   position: absolute;
-  top: 44%;
+  top: 75px;
   width: 100%;
   color: white;
 }
 
 .text-contents {
+  margin: 3% auto;
   width: 80%;
-  display: inline-block;
-  margin-top: 15px;
-  font-size: 13px;
+  display: none;
+  font-size: 12px;
   color: #b3aeb5;
 }
+
+/* ここに.text-activeのCSSを書いてください */
+.text-active {
+  display: block;
+}
+
 
 .heading h3 {
   font-weight: normal;
@@ -199,6 +207,7 @@ footer p {
   color: #b3aeb5;
   font-size: 12px;
 }
+
 .card-block {
   text-align: center;
 }
