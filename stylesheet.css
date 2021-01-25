@@ -199,6 +199,9 @@ footer p {
   color: #b3aeb5;
   font-size: 12px;
 }
+.card-block {
+  text-align: center;
+}
 
 footer {
   padding-top: 30px;
