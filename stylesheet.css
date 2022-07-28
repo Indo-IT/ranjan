@@ -91,6 +91,7 @@ header {
   z-index: 10;
 }
 
+
 .top-logo {
   width: 124px;
   margin-top: -28px;
@@ -118,13 +119,12 @@ header {
   background-color: rgba(255, 255, 255, 0.3);
 }
 
-/* menu-iconのCSSを貼り付けてください */
+/* menu-icon CSS */
 .menu-icon {
   color: white;
   float: right;
   font-size: 25px;
   padding: 21px 0;
-  /* displayをnoneに指定してください */
   display: none;
 }
 
@@ -175,7 +175,7 @@ header {
   color: #b3aeb5;
 }
 
-/* ここに.text-activeのCSSを書いてください */
+/* .text-active */
 .text-active {
   display: block;
 }
@@ -252,6 +252,9 @@ header {
 
 /* react.CSS */
 
+.red{
+    background: yellow;
+}
 
 footer img {
   width: 125px;
@@ -274,3 +277,4 @@ footer {
 .copyright {
   margin-top: 20px;
 }
+
